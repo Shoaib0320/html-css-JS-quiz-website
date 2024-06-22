@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website-with-Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="startPage" class="page">
+            <h2>Select a Topic:</h2>
+            <button onclick="startQuiz('html')">HTML 5</button>
+            <button onclick="startQuiz('css')">CSS 3</button>
+            <button onclick="startQuiz('jS_1')">JavaScript Quiz 1</button>
+            <button onclick="startQuiz('jS_2')">JavaScript Quiz 2</button>
+            <button onclick="startQuiz('jS_3')">JavaScript Quiz 3</button>
+            <button onclick="startQuiz('jS_4')">JavaScript Quiz 4</button>
+
+        </div>
+        <div id="quizPage" class="page">
+            <span id="questionNumber"></span>
+            <span id="question"></span>
+            <div id="timer"></div>
+            <form id="optionsForm"></form>
+            <button id="nextButton" onclick="nextQuestion()">Next</button>
+        </div>
+        <div id="resultPage" class="page">
+            <h2 id="resultText"></h2>
+            <img id="happyGif" src="https://media3.giphy.com/media/5GoVLqeAOo6PK/200w.gif?cid=6c09b952tdt7ricpg9ayqmgdj0mn7sslctcx8ewnddm2bjyt&ep=v1_gifs_search&rid=200w.gif&ct=g" style="display: none;" alt="Happy GIF">
+            <img id="sadGif" src="https://media4.giphy.com/media/l378giAZgxPw3eO52/giphy.gif?cid=6c09b952edvz408ztg8myu1ljb3jgan7hlf8pzjlavh5a0ut&ep=v1_gifs_search&rid=giphy.gif&ct=g" style="display: none;" alt="Sad GIF">
+        </div>
+    </div>
+   
+    
+    <script src="./quiz.js"></script>
+    <script src="script.js"></script>
+     <!-- <script src="app.js"></script> -->
+</body>
+</html>
